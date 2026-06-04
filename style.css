@@ -268,15 +268,15 @@ body {
 
 @media (max-width: 540px) {
     .hero {
-        height: 450px;
+        height: 500px;
     }
     .hero__main-text {
         font-size: 32px;
         line-height: 1.1;
-        margin-bottom: 40px;
+        margin-bottom: 70px;
     }
     .hero__title {
-        margin-bottom: 50px;
+        margin-bottom: 90px;
     }
 
     .header__nav-btn {
@@ -329,7 +329,7 @@ body {
 
 @media (max-width: 490px) {
     .hero__title {
-        font-size: 48px;
+        font-size: 52px;
         line-height: 1.1;
     }
     .hero__container {
