@@ -2,12 +2,14 @@
     color: #FF902A;
 }
 
-body {
+html {
     font-family: "Poppins", sans-serif;
     font-weight: 500;
     font-style: normal;
     
     background-color: #F6EBDA;
+
+    overflow-x: hidden;
 }
 
 .container {
@@ -138,7 +140,7 @@ body {
 .about {
     height: 100vh;
     color: #322118;
-    margin-top: 100px;
+    margin-top: 80px;
 }
 
 .about__container {
@@ -184,6 +186,64 @@ body {
 } 
 
 
+.products {
+    height: 100vh;
+    color: #322118;
+    margin-top: 80px;
+}
+
+.products__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.products__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.products__title {
+    font-size: 56px;
+    line-height: 1.1;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.products__text {
+    font-size: 36px;
+    line-height: 1.1;
+    font-weight: 500;
+}
+
+
+.products__content-image {
+    width: 900px;
+    height: 300px;
+    transform:translateX(200px);
+}
+
+.products__images {
+    max-width: 1300px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-bottom: 50px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 0 25px;
+}
+
+.products__images-item {
+    width: 600px;
+    height: 400px;
+    border-radius: 20px;
+    border: 1px solid #322118;
+    display: block;
+}
 
 
 
@@ -240,6 +300,13 @@ body {
     .branch-img {
         margin-left: -280px;
     } 
+
+    .products__images-item {
+        width: 900px;
+        max-width: 100%;
+        height: auto;
+        border-radius: 40px;
+    }
 }
 
 @media (max-width: 930px) {
@@ -250,6 +317,13 @@ body {
     .branch-img {
         margin-left: -150px;
     } 
+
+    .products__title, .products__text {
+        margin-left: 50px;
+    }
+    .products__content-image {
+        margin-right: 100px;
+    }
 }
 
 @media (max-width: 780px) {
@@ -263,6 +337,10 @@ body {
 
     .hero__container {
         padding-top: 40px;
+    }
+
+    .products__content-image {
+        display: none;
     }
 }
 
